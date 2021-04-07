@@ -1,0 +1,28 @@
+.container {
+    flex: 0 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        white-space: pre;
+
+        .item {
+            min-width: 40px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        & > :not(:last-child) {
+            margin-right: 20px;
+            min-width: 50px;
+        }
+    }
+
+    .bag {
+        height: 25px;
+    }
+}
